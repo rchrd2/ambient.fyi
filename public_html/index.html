@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ambient.fyi</title>
+    <meta name="description" content="Ambient.fyi is a free website to hear relaxing ambient music. Load the site and instantly experience meditative sounds.">
+    <meta name="author" content="Richard Caceres">
+
+    <link rel="stylesheet" href="lib/plyr.css" />
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89721811-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-89721811-4');
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column add-bottom">
+          <div id="mainwrap">
+              <div id="nowPlay">
+                  <span class="left" id="npAction">Paused...</span>
+                  <span class="right" id="npTitle"></span>
+              </div>
+              <div id="audiowrap">
+                  <div id="audio0">
+                      <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
+                  </div>
+                  <div id="tracks">
+                      <a id="btnPrev">&larr;</a>
+                      <a id="btnNext">&rarr;</a>
+                  </div>
+              </div>
+              <div id="plwrap">
+                  <ul id="plList"></ul>
+              </div>
+          </div>
+      </div>
+      <div class="column add-bottom center">
+          <p>by <a href="https://twitter.com/rchrd2/" target="_blank">Richard Caceres</a></p>
+          <p>All audio from uploads on <a href="https://archive.org" target="_blank">Archive.org.</a> All rights reserved by creators.</p>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="lib/html5media.min.js"></script>
+    <script src="lib/plyr.js"></script>
+    <script src="playlist.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
