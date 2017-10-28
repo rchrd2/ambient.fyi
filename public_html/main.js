@@ -5,6 +5,7 @@
 // CONFIG
 
 var randomize = true;
+var autoplay = true;
 
 //--------------
 
@@ -113,7 +114,12 @@ jQuery(function($) {
         loadTrack(id);
         audio.play();
       };
-    loadTrack(index);
+
+    if (autoplay) {
+      playTrack(index);
+    } else {
+      loadTrack(index);
+    }
   }
 });
 
