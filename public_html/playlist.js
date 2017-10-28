@@ -30,11 +30,11 @@ var PLAYLIST = {
     "file": "https://archive.org/download/vigil/vigil_005.mp3"
   }, ],
 
-  'Nature': [{
+  'Nature': [/*{
     "name": "Birdsong - Junior 85",
     "length": "22:34",
     "file": "https://archive.org/download/Sleep_Music-5629/zunior85_-_01_-_Birdsong.mp3"
-  }, {
+  }, */{
     "name": "Shoreline - Junior 85",
     "length": "35:55",
     "file": "https://archive.org/download/Sleep_Music-5629/junior85_-_02_-_Shoreline.mp3"
